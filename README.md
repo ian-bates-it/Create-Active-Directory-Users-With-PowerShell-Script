@@ -95,5 +95,113 @@ First, we will need to allow these new Domain users to remotely access our Windo
 
 
 
+---
+---
+<br />
+<br />
+
+
+<h2>Create 100 Active Directory Domain Users with PowerShell</h2>
+
+
+
+- Remote into the Windows 2022 Server Domain Controller.
+
+
+
+
+---
+<br />
+
+<h3>Open PowerShell as an Administrator</h3>
+
+- Click the Start Charm.
+- Right-click `Windows PowerShell ISE`
+- Select `Run as administrator` as shown below.
+
+
+  <img src="https://github.com/user-attachments/assets/702b1571-15b7-4fd3-9d0e-4a2819b5e894" height="60%" width="60%" />
+
+
+---
+<br />
+
+- Accept the UAC notification. Click `Yes` to continue.
+
+
+  <img src="https://github.com/user-attachments/assets/65174e23-4a83-49ee-b084-26778331d254" height="60%" width="60%" />
+
+
+
+---
+<br />
+
+<h3>Save the PowerShell Script on the Windows 2022 Server Desktop</h3>
+
+- Save the [PowerShell script at this link](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script/blob/main/create-ad-users-script.ps1), as a `.ps1` file on the Windows 2022 Server Desktop.
+
+
+  <img src="https://github.com/user-attachments/assets/06127c9a-59b4-467a-a859-1fe187f43cfa" height="80%" width="80%" />
+
+
+---
+<br />
+
+<h3>Double-Check Destination Organizational Unit Exists</h3>
+
+
+- The [PowerShell script](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script/blob/main/create-ad-users-script.ps1) relies on the existence of an organizational unit specifically called `_EMPLOYEES` to exist.
+- So double check that the Active Directory Users and Groups shows an [OU called `_EMPLOYEES` which we created in the section of this documentation at this link](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-an-organizational-unit-named-_employees).
+
+
+  <img src="https://github.com/user-attachments/assets/b0ab5b34-47cd-4e1a-99d9-2a7889467198" height="60%" width="60%" />
+
+
+
+---
+<br />
+
+<h3>Set-ExecutionPolicy Unrestricted</h3>
+
+- To create 100 Domain Users with this [PowerShell script] we will need to set the appropriate execution policy in PowerShell.
+- So run the command, `Set-ExecutionPolicy Unrestricted`, in PowerShell before running the new user script.
+
+  <img src="https://github.com/user-attachments/assets/4b6e4bd6-e00d-4053-ab72-c242bfab8576" height="60%" width="60%" />
+
+
+
+---
+<br />
+
+<h3>Run the PowerShell Script</h3>
+
+- Press the green play button in the top management panel as shown below to run the script and create 100 new Active Directoryt Domain Users.
+
+  <img src="https://github.com/user-attachments/assets/8a1195ce-5315-4f46-b510-e6e762c0c2de" height="80%" width="80%" />
+
+
+---
+<br />
+
+<h3>Refresh the `_EMPLOYEES` Organizational Unit</h3>
+
+- After running the [PowerShell script](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script/blob/main/create-ad-users-script.ps1) you may need to refresh the `_EMPLOYEES` OU to see the new users that have been created.
+- To do so, Right-click the `_EMPLOYEES` OU and select `Refresh` as shown below.
+
+  <img src="https://github.com/user-attachments/assets/6fcd531a-6951-48e7-927d-b1f5617f7302" height="60%" width="60%" />
+
+
+---
+<br />
+
+<h3>New AD Domain Users Created</h3>
+
+- Then you should have 100 new users in the `_EMPLOYEES` organizational unit as shown below.
+
+
+  <img src="https://github.com/user-attachments/assets/78963597-e219-4433-88dd-ff74cfc3e9fa" height="80%" width="80%" />
+
+
+
 
 
