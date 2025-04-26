@@ -233,4 +233,9 @@ To test the remote connection, do the following:
 - Run the command `query user`
 - Confirm that the details match as shown below.
 
-  <img src="https://github.com/user-attachments/assets/338e9de4-b2b1-45e8-a309-b0f31b9a216f" height="80%" width="80%" />
+  <img src="https://github.com/user-attachments/assets/74301ea6-a701-4cdf-9323-96da6bc555d7" height="80%" width="80%" />
+
+
+---
+---
+
