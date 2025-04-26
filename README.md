@@ -204,4 +204,33 @@ First, we will need to allow these new Domain users to remotely access our Windo
 
 
 
+---
+---
+<br />
+<br />
 
+
+<h2>Confirm New Domain User Account Has Access To Our Windows 10 Pro Client VM</h2>
+
+- To confirm that our new Domain Users can remotely access our Windows 10 Pro Client VM, select one of the new users.
+- Here, I selected a user named `austin.taylor` with the default password of `Password1`
+
+To test the remote connection, do the following: 
+
+1. Enter the public IP address of the Windows 10 Pro VM. Here that would be `20.81.44.196`.
+2. Enter the domain\new-user-username, so here that weould be `IanBates.com\Austin.Taylor.
+
+
+  <img src="https://github.com/user-attachments/assets/84e90603-4f5b-4524-a909-775f1881a149" height="50%" width="50%" />
+
+
+---
+<br />
+
+<h3>Run the command `query user`</h3>
+
+- After you are logged into the Windows 10 Pro VM with one of the new user accounts, open the CMD terminal.
+- Run the command `query user`
+- Confirm that the details match as shown below.
+
+  <img src="https://github.com/user-attachments/assets/338e9de4-b2b1-45e8-a309-b0f31b9a216f" height="80%" width="80%" />
