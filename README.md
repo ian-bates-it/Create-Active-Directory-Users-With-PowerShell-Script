@@ -8,7 +8,7 @@ Part 3_Creating Users With PowerShell
 
 
 
-# Create 100 Active Directory Users With A PowerShell Script
+# Chapter 6: Add 100 Active Directory Users With A PowerShell Script
 
 <!--
 - Using ChatGPT, here is the [PowerShell script I used to create 100 users in Active Directory](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script/blob/main/create-ad-users-script.ps1)
