@@ -10,15 +10,15 @@ Part 3_Creating Users With PowerShell
 
 # Create 100 Active Directory Users With A PowerShell Script
 
-
+<!--
 - Using ChatGPT, here is the [PowerShell script I used to create 100 users in Active Directory](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script/blob/main/create-ad-users-script.ps1)
+-->
 
-
-- We are going to create 100 Domain Users in active directory using a PowerShell script and they will be members of our `_EMPLOYEES` organizational unit that we created [in this part of Chapter 4 on OU's.](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-an-organizational-unit-named-_employees)
+- We are going to create 100 Domain Users in active directory using a [PowerShell script](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script/blob/main/create-ad-users-script.ps1) and they will be members of our `_EMPLOYEES` organizational unit that we created [in this part of Chapter 4 on OU's.](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-an-organizational-unit-named-_employees)
 - These users will automatically be added to the default **`Domain Users` security group**.
 - In `Part 1` of this chapter below, we will allow all members of the default `Domain Users` to remotely access our Windows 10 Pro virtual machine client.
-
-- Then on the Windows 2022 Server, open Windows PowerShell ISE as an administrator.
+- In `Parts 1 and 2` of this chapter, we will review and run a PowerShell script that will automate the process of creating 100 new Domain Users. 
+- Then in `Part 4` we will 
 - 
 
 
@@ -42,10 +42,12 @@ Part 3_Creating Users With PowerShell
 <h2>High-Level Configuration Steps</h2>
 
 - Part 1: [Allow All Domain Users to Remotely Access the Windows 10 Pro Client Remote Desktop](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script?tab=readme-ov-file#allow-all-domain-users-to-remotely-access-the-windows-10-pro-client-remote-desktop)
-- Part 2: [Review PowerShell Script]()
+- Part 2: [Review PowerShell Script](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script?tab=readme-ov-file#review-the-powershell-script)
 - Part 3: [Create 100 Active Directory Users with a PowerShell Script](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script?tab=readme-ov-file#create-100-active-directory-domain-users-with-powershell)
     - Set the Execution Policy to Unrestricted (`Set-ExecutionPolicy Unrestricted`)
-- Part 4: []()
+- Part 4: [Refresh the `_EMPLOYEES` OU. View the 100 New Domain Users created with our .ps1 script](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script?tab=readme-ov-file#refresh-the-_employees-organizational-unit)
+- Part 5: [Confirm New Domain User Account Has Access To Our Windows 10 Pro Client VM](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script?tab=readme-ov-file#confirm-new-domain-user-account-has-access-to-our-windows-10-pro-client-vm)
+      - Select a random new Domain User (`austin.taylor`) and remote into the Windows 10 Pro Client VM with the new user's credentials. 
 
 
 
@@ -404,8 +406,13 @@ New-AdUser -AccountPassword $password `
   <img src="https://github.com/user-attachments/assets/8a1195ce-5315-4f46-b510-e6e762c0c2de" height="80%" width="80%" />
 
 
----
+
 <br />
+<br />
+
+---
+
+<h1>Part 4:</h1>
 
 <h3>Refresh the `_EMPLOYEES` Organizational Unit</h3>
 
@@ -428,11 +435,12 @@ New-AdUser -AccountPassword $password `
 
 
 
----
----
 <br />
 <br />
 
+---
+
+<h1>Part 5:</h1>
 
 <h2>Confirm New Domain User Account Has Access To Our Windows 10 Pro Client VM</h2>
 
