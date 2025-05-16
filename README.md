@@ -35,8 +35,8 @@ Part 3_Creating Users With PowerShell
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 (21H2)
+- Windows Server 2022 (Domain Controller)
+- Windows 10 Pro (21H2) (Client)
 
 <h2>High-Level Configuration Steps</h2>
 
