@@ -17,10 +17,9 @@ Part 3_Creating Users With PowerShell
 - We are going to create 100 Domain Users in active directory using a [PowerShell script](https://github.com/ian-bates-it/Create-Active-Directory-Users-With-PowerShell-Script/blob/main/create-ad-users-script.ps1) and they will be members of our `_EMPLOYEES` organizational unit that we created [in this part of Chapter 4 on OU's.](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-an-organizational-unit-named-_employees)
 - These users will automatically be added to the default **`Domain Users` security group**.
 - In `Part 1` of this chapter below, we will allow all members of the default `Domain Users` to remotely access our Windows 10 Pro virtual machine client.
-- In `Parts 1 and 2` of this chapter, we will review and run a PowerShell script that will automate the process of creating 100 new Domain Users. 
-- Then in `Part 4` we will 
-- 
-
+- In `Parts 2 and 3` of this chapter, we will review and run a PowerShell script that will automate the process of creating 100 new Domain Users. 
+- Then in `Part 4` we will refresh our Active Directory Users and Computers to see the new 100 Domain Users.
+- Finally in `Part 5` of this chapter, we will select a random new user (`austin.taylor`) and use his credentials to remote into the Windows 10 Pro VM client. 
 
 ---
 ---
